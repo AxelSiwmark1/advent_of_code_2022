@@ -17,7 +17,7 @@ int main () {
             sum = sum + stoi(line);
         }
         else{
-            cout << sum << endl;
+
             if(sum > max){
               max = sum;
             } 
@@ -26,7 +26,6 @@ int main () {
     }
     cout << max;
     myfile.close();
-    cout << sum;
   }
 
   else cout << "Unable to open file"; 
