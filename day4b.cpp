@@ -15,12 +15,8 @@ bool does_ints_contain_ints(int n1, int n2, int n3, int n4)
 int main ()
 {
     list<int> ints;
-    string a = "4-90,1-4";
     string number;
-    
-    int sum = 0;
-    
-    
+    int sum = 0;        
     string line;
     ifstream myfile ("data_day4a.txt");
     if (myfile.is_open())
@@ -50,7 +46,6 @@ int main ()
             int fourth = ints.front();
             ints.pop_front();
             sum += does_ints_contain_ints(first, second, third, fourth);
-            cout << sum << endl;
         }
         myfile.close();
     }
