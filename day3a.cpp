@@ -30,12 +30,10 @@ int main()
             char item = does_string_contain_char(half, otherHalf);
             if(islower(item)) sum += int(item) - 96;
             else sum += int(item) - 38;
-            cout << item << endl;
-            cout << sum << endl;
         }
         myfile.close();
     }
-
+    cout << sum;
     return 0;
 }
 
